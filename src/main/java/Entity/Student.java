@@ -1,3 +1,5 @@
+package Entity;
+
 public class Student {
     private int StudentId;
     private String studentName;
@@ -34,5 +36,14 @@ public class Student {
 
     public void setStudentAddress(String studentAddress) {
         this.studentAddress = studentAddress;
+    }
+
+    @Override
+    public String toString() {
+        return "Entity.Student{" +
+                "StudentId=" + StudentId +
+                ", studentName='" + studentName + '\'' +
+                ", studentAddress='" + studentAddress + '\'' +
+                '}';
     }
 }
